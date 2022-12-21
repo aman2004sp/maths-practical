@@ -1,12 +1,5 @@
 import numpy as np
- 
-# input two matrices
-mat1 = ([1, 6, 5],[3 ,4, 8],[2, 12, 3])
-mat2 = ([3, 4, 6],[5, 6, 7],[6,56, 7])
- 
-# This will return dot product
-res = np.dot(mat1,mat2)
- 
- 
-# print resulted matrix
-print(res)
+my_matrix = np.array([[1, 2, 1], [3, 4, 7], [3, 6, 3]])
+print(my_matrix)
+rank = np.linalg.matrix_rank(my_matrix)
+print("Rank of the given Matrix is : ",rank)
